@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Ganhe 5 Mudas de Orquídea Grátis | Campo das Orquídeas</title>
+  <meta name="description" content="Receba 5 mudas de orquídea premium grátis do Campo das Orquídeas. Pague só o frete e transforme sua casa! Promoção limitada às primeiras 500 mudas.">
+  <meta name="keywords" content="orquídea grátis, muda de orquídea, Campo das Orquídeas, Cattleya, Phalaenopsis, Dendrobium, plantas">
+  <meta property="og:title" content="Ganhe 5 Mudas de Orquídea Grátis | Campo das Orquídeas">
+  <meta property="og:description" content="Receba 5 mudas de orquídea premium grátis. Pague só o frete!">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- UTMify Script -->
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+  <script>
+    window.pixelId = "6984f8da531c8ca8c9b84df3";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+</head>
+<body>
+
+  <!-- ==================== TOP BAR ==================== -->
+  <div id="topbar" class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-secure">
+        <i data-lucide="lock" class="icon-sm"></i>
+        <span class="topbar-secure-text">Você está Seguro!</span>
+      </div>
+      <div class="topbar-links">
+        <a href="#como-funciona" class="topbar-link">Dúvidas Frequentes</a>
+        <span class="topbar-divider">|</span>
+        <a href="#sobre" class="topbar-link">Sobre Nós</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header id="header" class="header">
+    <div class="container header-inner">
+      <!-- Menu Hamburguer -->
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">
+        <i data-lucide="menu" class="icon-md" id="menu-icon-open"></i>
+        <i data-lucide="x" class="icon-md hidden" id="menu-icon-close"></i>
+        <span class="menu-toggle-text">Menu</span>
+      </button>
+
+      <!-- Logo Centralizada -->
+      <a href="#" class="header-logo">
+        <img src="images/logo.png" alt="Campo das Orquídeas" class="logo-img">
+      </a>
+
+      <!-- Espaço para balancear -->
+      <div class="header-spacer"></div>
+    </div>
+
+    <!-- Menu Dropdown -->
+    <nav id="mobile-menu" class="mobile-menu hidden">
+      <div class="container">
+        <a href="#sobre" class="mobile-menu-link">Sobre Nós</a>
+        <a href="#como-funciona" class="mobile-menu-link">Como Funciona</a>
+        <a href="#frete" class="mobile-menu-link">Frete</a>
+        <a href="#depoimentos" class="mobile-menu-link">Depoimentos</a>
+        <a href="#cta-section" class="mobile-menu-link highlight">Garanta a Sua</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('images/hero-bg.jpg');">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content container">
+      <div class="hero-inner animate-fade-up">
+        <span class="promo-badge">
+          <i data-lucide="sparkles" class="icon-sm"></i>
+          PROMOÇÃO LIMITADA
+          <i data-lucide="sparkles" class="icon-sm"></i>
+        </span>
+
+        <h1 class="hero-title">
+          GANHE 5 MUDAS DE<br>
+          <span class="text-yellow">ORQUÍDEAS PREMIUM</span><br>
+          100% GRÁTIS!
+        </h1>
+
+        <p class="hero-subtitle">
+          Do <strong class="text-yellow">Campo das Orquídeas</strong>, as melhores orquídeas da internet.
+          Nós arcamos com o valor das plantas – você paga só o frete e leva beleza sustentável para casa!
+        </p>
+
+        <div class="hero-badges">
+          <div class="hero-badge">
+            <i data-lucide="leaf" class="icon-sm text-yellow"></i>
+            <span>5 mudas saudáveis e prontas para florir</span>
+          </div>
+          <div class="hero-badge">
+            <i data-lucide="truck" class="icon-sm text-yellow"></i>
+            <span>Envio para todo Brasil</span>
+          </div>
+          <div class="hero-badge">
+            <i data-lucide="gift" class="icon-sm text-yellow"></i>
+            <span>Dicas exclusivas de cultivo</span>
+          </div>
+        </div>
+
+        <button class="btn-cta btn-cta-large" onclick="redirectToPayment()">
+          GARANTA SUAS 5 MUDAS GRÁTIS AGORA!
+          <i data-lucide="arrow-right" class="icon-sm"></i>
+        </button>
+
+        <div class="hero-countdown-area">
+          <p class="countdown-label">
+            <i data-lucide="clock" class="icon-sm"></i>
+            Apenas para as primeiras <span class="text-yellow font-bold">500 participações</span> até 28/02/2026
+          </p>
+          <div class="countdown" id="countdown">
+            <div class="countdown-item">
+              <div class="countdown-value" id="days">00</div>
+              <div class="countdown-label-text">Dias</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-value" id="hours">00</div>
+              <div class="countdown-label-text">Horas</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-value" id="minutes">00</div>
+              <div class="countdown-label-text">Min</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-value" id="seconds">00</div>
+              <div class="countdown-label-text">Seg</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SOBRE / POR QUE GRÁTIS ==================== -->
+  <section id="sobre" class="section-light">
+    <div class="container">
+      <div class="grid-2col">
+        <div class="animate-on-scroll">
+          <span class="section-tag text-magenta">Nossa História</span>
+          <h2 class="section-title text-dark">
+            Por Que Estamos Dando<br>Mudas Grátis?
+          </h2>
+          <p class="section-text">
+            No <strong class="text-forest">Campo das Orquídeas</strong>, nossa missão é
+            <strong> ressignificar a vida das pessoas através das orquídeas</strong>! Fundado em 2016 por Fernando,
+            com mais de <strong>29 anos de experiência</strong> no cultivo de orquídeas, e sua filha Larissa,
+            apaixonada por essas flores desde os 9 anos.
+          </p>
+          <p class="section-text">
+            Para expandir nossa família de orquidófilos e mostrar a qualidade das nossas plantas,
+            estamos distribuindo mudas grátis! Cada uma é cultivada com amor em nosso orquidário
+            em <strong>Guararema/Santa Branca - SP</strong>, com técnicas que preservam o meio ambiente.
+          </p>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <i data-lucide="heart" class="icon-lg text-magenta"></i>
+              <h4 class="feature-title">Construir Confiança</h4>
+              <p class="feature-desc">Experimente nossa qualidade premium sem risco</p>
+            </div>
+            <div class="feature-card">
+              <i data-lucide="leaf" class="icon-lg text-magenta"></i>
+              <h4 class="feature-title">Sustentabilidade</h4>
+              <p class="feature-desc">Plantas produzidas em laboratório, sem retirada da natureza</p>
+            </div>
+            <div class="feature-card">
+              <i data-lucide="award" class="icon-lg text-magenta"></i>
+              <h4 class="feature-title">Qualidade Premium</h4>
+              <p class="feature-desc">Mudas selecionadas e prontas para florir</p>
+            </div>
+            <div class="feature-card">
+              <i data-lucide="tree-pine" class="icon-lg text-magenta"></i>
+              <h4 class="feature-title">Bem-estar</h4>
+              <p class="feature-desc">Orquídeas trazem alegria e terapia natural</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="animate-on-scroll">
+          <div class="owners-photo-wrapper">
+            <img src="images/owners.jpg" alt="Fernando e Larissa - Proprietários do Campo das Orquídeas" class="owners-photo">
+            <div class="owners-label">
+              <p class="owners-label-small">Família</p>
+              <p class="owners-label-title">Campo das Orquídeas</p>
+              <p class="owners-label-small">Fernando, Larissa e Renan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TRANSPARÊNCIA / FRETE ==================== -->
+  <section id="frete" class="section-dark">
+    <div class="section-dark-blobs">
+      <div class="blob blob-magenta"></div>
+      <div class="blob blob-yellow"></div>
+    </div>
+    <div class="container section-dark-content">
+      <div class="grid-2col">
+        <div class="animate-on-scroll">
+          <span class="section-tag text-yellow">Transparência Total</span>
+          <h2 class="section-title text-white">
+            Por Que Você Paga<br>Só o Frete?
+          </h2>
+          <p class="section-text text-white-90">
+            Queremos ser <strong class="text-yellow">100% transparentes</strong>: as mudas são grátis
+            porque arcamos com todo o custo de produção. O frete é essencial para cobrir o envio seguro –
+            plantas vivas precisam de embalagem ventilada, substrato úmido e rastreio.
+          </p>
+
+          <div class="transparency-list">
+            <div class="transparency-item">
+              <i data-lucide="gift" class="icon-md text-yellow"></i>
+              <p>Custo real coberto por nós: Você ganha 5 plantas que valem mais de R$ 100</p>
+            </div>
+            <div class="transparency-item">
+              <i data-lucide="package" class="icon-md text-yellow"></i>
+              <p>Envio especializado: Garantimos que chegue perfeita, sem danos</p>
+            </div>
+            <div class="transparency-item">
+              <i data-lucide="check-circle-2" class="icon-md text-yellow"></i>
+              <p>Qualidade garantida: Mudas selecionadas e prontas para florir</p>
+            </div>
+          </div>
+
+          <p class="section-text text-white-80 italic mt-6">
+            É como ganhar um presente valioso e pagar só a entrega!
+          </p>
+        </div>
+
+        <div class="animate-on-scroll">
+          <div class="packaging-card">
+            <img src="images/packaging.jpg" alt="Embalagem especializada para envio de orquídeas" class="packaging-img">
+            <button class="btn-cta btn-cta-full" onclick="redirectToPayment()">
+              Pronto para receber as suas?
+              <i data-lucide="arrow-right" class="icon-sm"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12 animate-on-scroll">
+        <button class="btn-cta" onclick="redirectToPayment()">
+          Quero minhas 5 mudas grátis!
+          <i data-lucide="external-link" class="icon-sm"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COMO FUNCIONA ==================== -->
+  <section id="como-funciona" class="section-light">
+    <div class="container">
+      <div class="text-center animate-on-scroll">
+        <span class="section-tag text-magenta">Passo a Passo</span>
+        <h2 class="section-title text-dark">
+          Como Funciona?<br>Passos Simples
+        </h2>
+        <p class="section-subtitle">
+          Participar é fácil e rápido – em minutos, suas 5 mudas estão a caminho!
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="steps-col animate-on-scroll">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <div class="step-header">
+                <i data-lucide="gift" class="icon-sm text-magenta"></i>
+                <h4 class="step-title">Leia sobre a promoção</h4>
+              </div>
+              <p class="step-desc">Conheça os detalhes e clique no botão para iniciar.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <div class="step-header">
+                <i data-lucide="mail" class="icon-sm text-magenta"></i>
+                <h4 class="step-title">Preencha suas informações</h4>
+              </div>
+              <p class="step-desc">Nome, email, endereço e CEP para calcular o frete exato.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <div class="step-header">
+                <i data-lucide="heart" class="icon-sm text-magenta"></i>
+                <h4 class="step-title">Aceite as ações simples</h4>
+              </div>
+              <p class="step-desc">Seguir nossas redes sociais e compartilhar foto com #CampoDasOrquideasGratis.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="steps-col animate-on-scroll">
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <div class="step-header">
+                <i data-lucide="truck" class="icon-sm text-magenta"></i>
+                <h4 class="step-title">Pague só o frete</h4>
+              </div>
+              <p class="step-desc">Via cartão ou Pix com integração segura.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <div class="step-header">
+                <i data-lucide="package" class="icon-sm text-magenta"></i>
+                <h4 class="step-title">Receba suas mudas</h4>
+              </div>
+              <p class="step-desc">Em 5–10 dias + email com dicas de cultivo e desconto na loja online!</p>
+            </div>
+          </div>
+
+          <!-- Aviso Legal -->
+          <div class="legal-notice">
+            <p>
+              <strong>Aviso legal:</strong> Envio grátis das mudas; frete sujeito a estoque.
+              Dados usados só para envio e marketing (LGPD compliant).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12 animate-on-scroll">
+        <button class="btn-cta" onclick="redirectToPayment()">
+          Inicie seu cadastro!
+          <i data-lucide="external-link" class="icon-sm"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SOBRE O CAMPO DAS ORQUÍDEAS ==================== -->
+  <section class="section-dark">
+    <div class="container section-dark-content">
+      <div class="grid-2col">
+        <div class="animate-on-scroll">
+          <span class="section-tag text-yellow">Conheça Nosso Espaço</span>
+          <h2 class="section-title text-white">
+            Sobre o Campo das Orquídeas
+          </h2>
+          <p class="section-text text-white-90">
+            Somos um <strong class="text-yellow">orquidário online especializado</strong> no envio
+            de orquídeas para todo o Brasil! Trabalhamos com uma grande variedade de espécies como
+            <strong> Cattleyas, Phalaenopsis, Dendrobium, Oncidium</strong> e muito mais.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <p class="stat-value">50k+</p>
+              <p class="stat-label">Caixas Enviadas</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-value">29+</p>
+              <p class="stat-label">Anos de Experiência</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-value">100%</p>
+              <p class="stat-label">Entrega Garantida</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-value">Brinde</p>
+              <p class="stat-label">Em Todo Pedido</p>
+            </div>
+          </div>
+
+          <p class="section-text text-white-80 mb-6">
+            Oferecemos mudas, fertilizantes, substratos e conteúdo educativo no YouTube.
+          </p>
+
+          <button class="btn-cta" onclick="redirectToPayment()">
+            Garanta suas 5 mudas grátis!
+            <i data-lucide="arrow-right" class="icon-sm"></i>
+          </button>
+        </div>
+
+        <div class="animate-on-scroll">
+          <div class="about-photo-wrapper">
+            <img src="images/owners.jpg" alt="Equipe do Campo das Orquídeas" class="owners-photo">
+            <div class="about-badge">
+              <i data-lucide="users" class="icon-md text-dark"></i>
+              <p class="about-badge-text">Negócio Familiar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DEPOIMENTOS ==================== -->
+  <section id="depoimentos" class="section-testimonials">
+    <div class="container">
+      <div class="text-center animate-on-scroll">
+        <span class="section-tag text-yellow">Prova Social</span>
+        <h2 class="section-title text-white">
+          Depoimentos de<br>Quem Já Participou
+        </h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="stars">
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+          </div>
+          <p class="testimonial-text">"Adorei as 5 mudas grátis! Chegaram perfeitas e já estão florescendo. Recomendo o Campo das Orquídeas!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">M</div>
+            <div>
+              <p class="author-name">Maria S.</p>
+              <p class="author-location">São Paulo, SP</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card animate-on-scroll">
+          <div class="stars">
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+          </div>
+          <p class="testimonial-text">"Ótima qualidade e envio rápido. Paguei só o frete e ganhei 5 belezas para casa!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">J</div>
+            <div>
+              <p class="author-name">João R.</p>
+              <p class="author-location">Rio de Janeiro, RJ</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card animate-on-scroll">
+          <div class="stars">
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+          </div>
+          <p class="testimonial-text">"Promoção incrível. Segui as redes e compartilhei – agora sou fã do Campo das Orquídeas!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div>
+              <p class="author-name">Ana P.</p>
+              <p class="author-location">Belo Horizonte, MG</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card animate-on-scroll">
+          <div class="stars">
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+            <i data-lucide="star" class="star-icon"></i>
+          </div>
+          <p class="testimonial-text">"Sustentável e acessível. Minhas 5 orquídeas vieram de graça e chegaram lindas!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">P</div>
+            <div>
+              <p class="author-name">Pedro T.</p>
+              <p class="author-location">Brasília, DF</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12 animate-on-scroll">
+        <button class="btn-cta" onclick="redirectToPayment()">
+          Seja o próximo a compartilhar sua história!
+          <i data-lucide="arrow-right" class="icon-sm"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA FINAL ==================== -->
+  <section id="cta-section" class="section-light">
+    <div class="container">
+      <div class="cta-wrapper animate-on-scroll">
+        <span class="section-tag text-magenta">Última Etapa</span>
+        <h2 class="section-title text-dark">
+          Garanta Suas<br>5 Mudas Grátis!
+        </h2>
+        <div class="urgency-badge" id="urgency-badge">
+          <i data-lucide="sparkles" class="icon-sm"></i>
+          Restam apenas <span id="remaining-slots">347</span> vagas!
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card-top-bar"></div>
+          <div class="cta-card-content">
+            <div class="cta-checks">
+              <div class="cta-check">
+                <i data-lucide="check-circle-2" class="icon-sm text-green"></i>
+                <span>5 Mudas 100% grátis</span>
+              </div>
+              <div class="cta-check">
+                <i data-lucide="check-circle-2" class="icon-sm text-green"></i>
+                <span>Envio seguro</span>
+              </div>
+              <div class="cta-check">
+                <i data-lucide="check-circle-2" class="icon-sm text-green"></i>
+                <span>Dicas de cultivo</span>
+              </div>
+            </div>
+
+            <p class="cta-text">
+              Clique no botão abaixo para preencher suas informações e calcular o frete.
+              Em poucos minutos, suas 5 mudas estarão a caminho!
+            </p>
+
+            <button class="btn-cta btn-cta-full btn-cta-xl" onclick="redirectToPayment()">
+              QUERO MINHAS 5 MUDAS GRÁTIS!
+              <i data-lucide="external-link" class="icon-md"></i>
+            </button>
+
+            <p class="cta-secure">
+              <i data-lucide="check-circle-2" class="icon-xs text-green"></i>
+              Pagamento seguro via cartão ou Pix
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Campo das Orquídeas" class="footer-logo">
+          <p class="footer-desc">
+            As melhores orquídeas da internet! Desde 2016 levando beleza e alegria para todo o Brasil
+            com garantia de entrega e qualidade premium.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Diferenciais</h4>
+          <div class="footer-items">
+            <p class="footer-item">
+              <i data-lucide="shield-check" class="icon-sm text-magenta"></i>
+              Envio seguro para todo Brasil
+            </p>
+            <p class="footer-item">
+              <i data-lucide="flower-2" class="icon-sm text-magenta"></i>
+              Grande variedade de espécies
+            </p>
+            <p class="footer-item">
+              <i data-lucide="badge-check" class="icon-sm text-magenta"></i>
+              29+ anos de experiência
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Garantias</h4>
+          <div class="footer-items">
+            <p class="footer-item">
+              <i data-lucide="check-circle-2" class="icon-sm text-magenta"></i>
+              Mudas saudáveis e selecionadas
+            </p>
+            <p class="footer-item">
+              <i data-lucide="package" class="icon-sm text-magenta"></i>
+              Embalagem especializada
+            </p>
+            <p class="footer-item">
+              <i data-lucide="gift" class="icon-sm text-magenta"></i>
+              Brinde em todo pedido
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <p class="footer-copyright">© 2026 Campo das Orquídeas. Todos os direitos reservados.</p>
+          <p class="footer-cnpj">CNPJ: 28.882.950/0001-06</p>
+        </div>
+        <button class="btn-outline" onclick="redirectToPayment()">
+          Não perca! Ganhe suas 5 mudas grátis hoje
+          <i data-lucide="arrow-right" class="icon-sm"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
